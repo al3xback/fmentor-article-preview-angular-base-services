@@ -11,7 +11,7 @@ export class BaseService {
 		}
 	};
 	challenge = {
-		name: 'Single price grid component',
+		name: 'Article preview component',
 		creator: {
 			name: 'Frontend Mentor',
 			link: 'https://www.frontendmentor.io?ref=challenge'
