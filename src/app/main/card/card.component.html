@@ -1,0 +1,62 @@
+<div class="image">
+	<div class="image-inner">
+		<img [src]="card.imageSrc" alt="" />
+	</div>
+</div>
+<div class="content">
+	<h2 class="title">{{ card.title }}</h2>
+	<p class="desc">{{ card.description }}</p>
+	<div class="author">
+		<div class="author-img-box">
+			<img
+				class="author-img"
+				width="40"
+				height="40"
+				[src]="card.author.imageSrc"
+				[alt]="card.author.name"
+			/>
+		</div>
+		<div class="author-info">
+			<h3 class="author-name">{{ card.author.name }}</h3>
+			<p class="author-post-date">{{ getAuthorPostDate() }}</p>
+		</div>
+	</div>
+	<div class="share">
+		<input
+			type="checkbox"
+			name="toggle"
+			id="share-toggle"
+			class="share-checkbox"
+		/>
+		<div class="share-box">
+			<div class="share-action">
+				<span class="share-action-txt">Share</span>
+				<ul class="share-action-buttons">
+					<li>
+						<a href="#" title="Share on facebook">
+							<i class="icon-facebook" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Share on twitter">
+							<i class="icon-twitter" aria-hidden="true"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Share on pinterest">
+							<i class="icon-pinterest" aria-hidden="true"></i>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<label for="share-toggle" class="btn btn-icon btn-share-toggle">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15" height="13">
+					<path
+						fill="currentColor"
+						d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"
+					></path>
+				</svg>
+			</label>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,6 @@
+@use '../assets/scss/abstracts/mixins' as mix;
+
+:host {
+	@include mix.flex(auto);
+	@include mix.flexbox;
+}

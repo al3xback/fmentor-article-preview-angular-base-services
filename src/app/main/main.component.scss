@@ -1,0 +1,12 @@
+@use '../../assets/scss/abstracts/mixins' as mix;
+
+:host,
+.container {
+	@include mix.flexbox;
+	@include mix.flex(auto);
+}
+
+.container {
+	@include mix.justify-content(center);
+	@include mix.align-items(center);
+}
