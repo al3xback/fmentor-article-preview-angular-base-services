@@ -7,9 +7,9 @@
 	@include mix.flex-direction(column);
 	width: 100%;
 	max-width: func.em(320, var.$font-size-primary);
+	background-color: var.$color-white;
 	margin: func.em(40, var.$font-size-primary) 0
 		func.em(60, var.$font-size-primary);
-	background-color: var.$color-white;
 	@include mix.border-radius(8px);
 	@include mix.box-shadow(
 		0 func.em(16, var.$font-size-primary)
@@ -89,8 +89,8 @@
 
 .share {
 	position: absolute;
-	bottom: 0;
 	left: 0;
+	bottom: 0;
 	@include mix.flexbox;
 	@include mix.flex-direction(column);
 	width: 100%;
@@ -122,8 +122,8 @@
 .share-action {
 	position: absolute;
 	top: 0;
-	bottom: 0;
 	left: 0;
+	bottom: 0;
 	right: 0;
 	gap: func.em(20, var.$font-size-primary);
 	padding: inherit;
@@ -190,8 +190,8 @@
 
 	.share-action {
 		top: auto;
-		bottom: func.em(80, var.$font-size-primary);
 		left: auto;
+		bottom: func.em(80, var.$font-size-primary);
 		right: func.em(-68, var.$font-size-primary);
 		padding: func.em(16, var.$font-size-primary)
 			func.em(32, var.$font-size-primary);
@@ -206,8 +206,8 @@
 	.share-action::before {
 		content: '';
 		position: absolute;
-		bottom: func.em(-7.5, var.$font-size-primary);
 		left: 50%;
+		bottom: func.em(-7.5, var.$font-size-primary);
 		width: func.em(15, var.$font-size-primary);
 		height: func.em(15, var.$font-size-primary);
 		background-color: inherit;
