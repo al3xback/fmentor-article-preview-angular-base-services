@@ -11,10 +11,7 @@
 	margin: func.em(40, var.$font-size-primary) 0
 		func.em(60, var.$font-size-primary);
 	@include mix.border-radius(8px);
-	@include mix.box-shadow(
-		0 func.em(16, var.$font-size-primary)
-			func.em(30, var.$font-size-primary) rgba(0, 0, 0, 0.04)
-	);
+	@include mix.box-shadow(0 16px 30px rgba(0, 0, 0, 0.04));
 }
 
 .image,
@@ -197,10 +194,7 @@
 			func.em(32, var.$font-size-primary);
 		background-color: var.$color-dark-grayish-blue;
 		@include mix.border-radius(10px);
-		@include mix.box-shadow(
-			0 func.em(8, var.$font-size-primary)
-				func.em(16, var.$font-size-primary) rgba(0, 0, 0, 0.16)
-		);
+		@include mix.box-shadow(0 8px 16px rgba(0, 0, 0, 0.16));
 	}
 
 	.share-action::before {

@@ -4,15 +4,13 @@
 
 .btn {
 	@include mix.inline-flexbox;
-	padding: func.em(12, var.$font-size-primary);
+	padding: 0;
+	background-color: transparent;
 	border: 1px solid transparent;
-	@include mix.user-select(none);
-	@include mix.border-radius(4px);
-	@include mix.box-shadow(0rem 0.5em 1.125em rgba(0, 0, 0, 0.2));
-	@include mix.transition(all 0.4s);
-	cursor: pointer;
-	font-size: 1em;
 	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+	@include mix.transition(all 0.15s ease-in-out);
 }
 
 .btn-icon {
@@ -24,12 +22,13 @@
 	background-color: var.$color-light-grayish-blue;
 	border-color: var.$color-light-grayish-blue;
 	@include mix.border-radius(50%);
-	@include mix.box-shadow(none);
 	color: var.$color-desaturated-dark-blue;
 }
 
 .btn-link {
-	padding: 0;
-	@include mix.box-shadow(none);
 	color: var.$color-dark-grayish-blue;
+}
+
+.btn--link:hover {
+	text-decoration: underline;
 }
