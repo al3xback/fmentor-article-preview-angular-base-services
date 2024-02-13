@@ -157,7 +157,7 @@
 	color: var.$color-white;
 }
 
-@media (min-width: 60em) {
+@media (min-width: 56em) {
 	:host {
 		@include mix.flex-direction(row);
 		max-width: func.em(720, var.$font-size-primary);
