@@ -1,6 +1,10 @@
 {
   "name": "fmentor-article-preview-angular-base-services",
+  "private": true,
   "version": "0.0.0",
+  "type": "module",
+  "author": "alex <al3xback@gmail.com>",
+  "license": "ISC",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +12,6 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.0",
     "@angular/common": "^16.2.0",
